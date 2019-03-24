@@ -1,0 +1,405 @@
+body{
+	padding-top: 1px;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	line-height: 18px; 
+	color: #333333;
+	background-color: #E4E4E4;
+	overflow-x: hidden;
+}
+hr {
+    margin: 18px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
+}
+a { color: #56A590; }
+a:hover, a:focus { color: #209E85; }
+.btn-success { background-color: #56A590; }
+
+/* index html */
+
+#page-head-right{
+	float: right;
+}
+#page-head-right #main-login{
+	height: 40px;
+	width: 110px;
+}
+.twi-btn-left{
+	background: url(../images/icons.png) no-repeat 0 -64px;
+	width: 54px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+}
+.twi-btn-left span{
+	line-height: 40px;
+	text-indent: 6px;
+	color: #555;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.twi-btn-left:hover, .twi-btn-right.active{
+	background: url(../images/icons.png) no-repeat 0px -144px;
+}
+.twi-btn-left:hover span, .twi-btn-right.active{
+	color: white;
+}
+.twi-btn-right{
+	margin-left: -3px;
+	background: url(../images/icons.png) no-repeat -54px -64px;
+	width: 54px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+}
+.twi-btn-right span{
+	line-height: 40px;
+	text-indent: -6px;
+	color: #555;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.twi-btn-right:hover{
+	background: url(../images/icons.png) no-repeat -54px -104px;
+}
+.twi-btn-right:hover span{
+	color: white;
+}
+/* 弹出框 */
+.modal{
+	left: 42%;
+	width: 800px;
+	height: 500px;
+}
+.modal.fade{
+	top: -100%;
+}
+.denglu{
+	margin-top: 50px;
+	float: right;
+	width: 360px;
+}
+.zhuce{
+	margin-top: 10px;
+	float: right;
+	width: 353px;
+}
+form span{
+	padding-right: 45px;
+}
+form input{
+	margin: 20px 0 10px;
+}
+form button{
+	margin: 30px 0;
+	width: 60%;
+}
+form .or{
+	margin-top: 40px;
+}
+form dd{
+	display: inline-block;
+	color:#ccc;
+	margin-bottom: 30px;
+}
+.or a{
+	text-decoration: none;
+	color: #ccc;
+}
+form i{
+	width: 40px;
+	height: 40px;
+	padding: 0 20px;
+}
+form #tubiao{
+	font-size: 35px;
+}
+#main-menu{
+	float: right;
+	margin-top: 20px;
+	position: relative;
+	clear: both;
+}
+#main-menu a{
+	padding-left: 20px;
+	text-decoration: none;
+	color: #666;
+	font-size: 16px;
+}
+#main-menu a:hover{
+	color: #19896b;
+}
+
+/* 轮播 */
+#carousel_box{
+	height: 770px;
+	width: 1170px;
+}
+.carousel-indicators{
+	top: 530px;
+	left: 500px;
+}
+.carousel-indicators li{
+	background-color: #d4d5d6;
+}
+.carousel-indicators .active{
+	background-color: #209e85;
+}
+.carousel-caption{
+	top: 580px;
+	background: #E4E4E4;
+}
+.carousel-inner{
+	overflow: visible;
+}
+.carousel-caption h4, .carousel-caption p{
+	line-height: 20px;
+	color: #333;
+	margin-bottom: 3px;
+}
+hr.slide_pic{
+	border-top: 2px solid #bbb;
+	border-bottom: 1px solid #bbb;
+	position: relative;
+	top: -220px;
+	z-index: 1000;
+}
+hr.slide_h2{
+	position: relative;
+	top:-164px;
+	z-index: 1000;
+}
+/* 评论部分 */
+.page-header{
+	padding-bottom: 17px;
+	margin: 18px 20px;
+	border-bottom: 1px solid #bbb;
+}
+.potrait img{
+	border-radius: 50%;
+	margin-top: 2px;
+	width: 40px;
+	height: 40px;
+}
+
+.quote{
+	font-size: 15px;
+	color: #666;
+	line-height: 21px;
+}
+.quote-author{
+	float: right;
+}
+.quote p{
+	margin: 0;
+}
+#teacher{
+	padding-top: 20px;
+}
+/* 页脚部分 */
+footer{
+	margin: 30px auto 20px;
+	border-top: 1px solid #ccc;
+}
+footer .row .span3{
+	text-align: center;
+}
+footer h4{
+	border-bottom: 1px solid #ccc;
+	padding: 16px 0;
+	margin-bottom: 0;
+}
+.span3 ul{
+	padding: 16px 0;
+	margin: 0;
+}
+.span3 ul li{
+	list-style: none;
+	line-height: 20px;
+}
+.copyright {
+    font-size: 12px;
+    color: #666666;
+    width: 990px;
+    position: relative;
+    left: 50%;
+    margin-left: -495px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+/* news.html */
+body .main-body{
+	background-color: #f9f9f9;
+	padding: 20px 0;
+	padding-bottom: 200px;
+}
+.navbar .nav{
+	bottom: -30px;
+}
+.nav-bar-search{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+#menu {
+    background-color: #E4E4E4;
+    width: 100%;
+    top: 0;
+}
+.nav-box { top: 40px; }
+.articles .span2{
+	height: 120px;
+}
+.articles .span6{
+	margin: -121px 200px;
+}
+#laiyuan{
+	padding-top: 20px;
+}
+.thumnail { padding-left: 20px;}
+.menu { margin: 6px auto; }
+.menu .nav {
+    padding: 0;
+    margin: 0;
+}
+.topbox { margin-bottom: 0; }
+.width5 { width: 290px; }
+.width5 .sources .span3 {
+    width: 210px;
+    margin-left: 6px;
+}
+.width5 .sources .span3 a { font-size: 20px; }
+body.news .page-header { padding: 0; }
+body.news .span4 .page-header { margin-left: -6px; }
+/* root.html */
+
+.introduction{
+	padding-left: 22px;
+}
+.well{
+	margin-left: 24px;
+}
+/* team.html */
+.team_box{
+	padding: 20px;
+}
+.header_top{
+	border: none;
+	text-align: center;
+	padding: 40px;
+	background: url(../images/team2.png) #eee no-repeat right -20px;
+}
+.header_top small{
+	font-size: 16px;
+	display: block;
+	margin-top: 1em;
+}
+.team-header {
+    font-size: 16px;
+    color: #209E85;
+}
+.team-title{
+	margin: 12px 0;
+	padding: 12px 0;
+	border-bottom: 1px solid #dfdfdf;
+}
+.team-title .title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+}
+.team-title .team-meta{
+	font-size: 14px;
+}
+.team-title .leader{
+	margin-right: 12px;
+}
+.team-stat p{
+	float: left;
+	margin-right: 36px;
+	font-size: 14px;
+}
+.team-stat p .stat{
+	color: #49af9b;
+	padding-left: 6px;
+	font-weight: bold;
+}
+/* .emblem{
+	width: 100%;
+} */
+.offset80{
+	position: relative;
+	right: -80px;
+}
+.bgfff{
+	background: #F9F9F9;
+}
+.bgfff a{
+	text-decoration: none;
+}
+.width4{
+	width: 300px;
+	margin: 0;
+	padding-top: 20px;
+}
+.table-condensed{
+	margin-left: 20px;
+}
+.table-condensed img{
+	margin-right: 2px;
+}
+.width4 tr td{
+	padding: 10px 0;
+}
+.width4 tr td img{
+	height: 20px;
+}
+.tags{
+	line-height: 4em;
+	vertical-align: middle;
+}
+.tuijian .page-header{
+	margin: 10px 0;
+	padding: 0;
+	border-bottom: 4px solid #dfdfdf;
+}
+.tuijian .page-header h3{
+	margin: 0;
+	padding: 0;
+}
+.tuijian .span3{
+	width: 200px;
+	margin-left: 10px;
+}
+.tuijian h5{
+	margin: 0;
+	padding: 0;
+}
+.tuijian .row{
+	margin-top: 12px;
+}
+/* daka.html */
+.row_card{
+	border-bottom: 1px solid #ddd;
+	margin: 10px 20px;
+	padding-bottom: 10px;
+}
+.row_card .span1{
+	margin: 0;
+}
+.row_card .span6{
+	margin: 0;
+}
+.row_card .note{
+	margin: 0;
+}
+.row_card>.span6 .btn-group{
+	margin-right: -100px;
+}

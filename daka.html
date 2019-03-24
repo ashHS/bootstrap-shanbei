@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>打卡日记</title>
+		<script src="js/jquery-1.9.1.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script>
+			$(function(){
+				$("#menu").affix({
+					offset:{top:86}
+				})
+				$(".nav-box").affix({
+					offset:{top:40}
+				})	
+			}); 
+		</script>
+	</head>
+	<body data-spy="scroll" data-toggle=".menu">
+		<div class="navbar container topbox">
+			<div class="navbar-inner">
+				<div class="container">
+					<div class="page-head">
+						<div id="page-head-right">
+							<div id="main-login" class="pull-right">
+								<a href="#" class="twi-btn-left"><span>登录</span></a>
+								<a href="#" class="twi-btn-right"><span>注册</span></a>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a href="index.html" class="brand"><img src="images/logo2.png" ></a>
+					<div class="nav-collapse">
+						<ul class="nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									背单词<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">单词书</a></li>
+									<li><a href="#">单词量测试</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									炼句<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">课程</a></li>
+									<li><a href="#">设置</a></li>
+									<li><a href="#">炼句计划</a></li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									阅读
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									市场
+								</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									社区<b class="caret"></b>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">小组</a></li>
+									<li><a href="#">论坛</a></li>
+									<li><a href="#">周刊</a></li>
+								</ul>
+							</li>
+						</ul>
+						<form action="" class="nav-bar-search pull-left">
+							<input type="text" class="search-query span2" placeholder="查词">
+							<span class="search-icon"></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container menu">
+			<ul class="nav nav-pills dropdown" id="menu">
+				<li>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						打卡日记<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">最新日记</a></li>
+						<li><a href="#">最近日记</a></li>
+						<li><a href="#">历史日记</a></li>
+					</ul>
+				</li>
+				<li><a href="#">我的打卡</a></li>
+				<li><a href="#">每日打卡</a></li>
+				<li><a href="#1">榜样打卡</a></li>
+				<li><a href="#2">最新打卡</a></li>
+				<li><a href="#3">最受欢迎打卡</a></li>
+			</ul>
+		</div>
+		<div class="container bgfff">
+			<div class="row">
+				<div class="span8">
+					<div class="page-header" id="1">
+						<h3>榜样打卡</h3>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+								<div class="btn-group span2 pull-right">
+									<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+									<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+									<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">暂无</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="page-header" id="2">
+						<h3>最新打卡</h3>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="page-header" id="3">
+						<h3>最受欢迎打卡</h3>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row row_card">
+						<div class="span1">
+							<div class="avatar">
+								<a href="#"><img src="images/avatar.png" alt=""></a>
+							</div>
+						</div>
+						<div class="span6">
+							<div class="info">
+								<span class="uesrname">
+									<a href="#">chain</a>第865天打卡日记
+								</span>
+								<p class="note">学习了50个单词</p>
+								<div><a href="#" class="target">七月 1，2013</a></div>
+							</div>
+							<div class="btn-group span2 pull-right">
+								<a href="#" class="btn btn-mini">喜欢(<span class="like_num">0</span>)</a>
+								<a href="#" class="btn btn-mini">评论(<span class="comment_num">2</span>)</a>
+								<a href="#" class="btn btn-mini dropdown-toggle" data-toggle="dropdown">分享(<b class="caret"></b>)</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">暂无</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span4">
+					<div class="nav-box span3 menu">
+						<div class="page-header">
+							<h3>打卡导航</h3>
+						</div>
+						<ul class="nav nav-tabs nav-stacked">
+							<li><a href="#1">榜样打卡</a></li>
+							<li><a href="#2">最新打卡</a></li>
+							<li><a href="#3">最受欢迎打卡</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="container">
+			<div class="row">
+				<div class="span3">
+					<h4>如何使用</h4>
+					<ul>
+						<li><a href="#">帮助</a></li>
+						<li><a href="#">登录</a></li>
+						<li><a href="#">博客</a></li>
+						<li><a href="#">论坛</a></li>
+					</ul>
+				</div>
+				<div class="span3">
+				    <h4>关注扇贝</h4>
+				    <ul>
+				        <li><a target="_blank" href="#">人人网公共主页</a></li>
+				        <li><a target="_blank" href="#">QQ认证空间</a></li>
+				        <li><a target="_blank" href="#">新浪微博</a></li>
+				        <li><a target="_blank" href="#">豆瓣小七</a></li>
+				    </ul>
+				</div>
+				<div class="span3">
+					<h4>关于我们</h4>
+					<ul>
+						<li><a href="#">关于扇贝</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">友情链接</a></li>
+					</ul>
+				</div>
+				<div class="span3">
+				    <h4>面向开发者</h4>
+				    <ul>
+				        <li><a href="#">API</a></li>
+				    </ul>
+				</div>
+			</div>
+			<div class="copyright"> 
+				李笑来老师的头像由李笑来老师授权扇贝网使用 
+				<br />
+			    其他用户头像均由扇贝网真实用户提供，授权扇贝网使用 
+				<br />
+			    Copyright &copy; 2009-2013 shanbay.com, all rights reserved. 苏ICP备11041388 
+			</div>
+		</footer>
+	</body>
+</html>

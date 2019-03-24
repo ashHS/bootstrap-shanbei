@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>扇贝单词</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="page-head" class="clearfix">
+				<div class="pull-left">
+					<a href="index.html"><img src="images/landing_page_logo.png" alt=""></a>
+				</div>
+				<div id="page-head-right">
+					<div id="main-login" class="pull-right">
+						<a href="#" class="twi-btn-left" data-toggle="modal" data-target="#login"><span>登录</span></a>
+						<a href="#" class="twi-btn-right" data-toggle="modal" data-target="#register"><span>注册</span></a>
+					</div>
+					<!-- 登陆弹出框 -->
+					<div class="modal fade modal-login" role="dialog" id="login">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4>欢迎来到扇贝</h4>
+								</div>
+								<div class="modal-body text-center">
+									<div class="daka" style="float: left;">
+										<img src="images/daka.png" alt="" style="width: 400px;height: 400px;">
+									</div>
+									<form action="" class="denglu">
+										<input type="text" placeholder="用户名/邮箱/手机号">
+										<br>
+										<input type="text" placeholder="密码">
+										<br>
+										<span>还没有账号？<a href="#" data-dismiss="modal" data-toggle="modal" data-target="#register">去注册</a></span>
+										<span style="margin-right: -45px"><a href="https://web.shanbay.com/web/account/reset">忘记密码？</a></span>
+										<br>
+										<button type="button" class="btn btn-sm btn-success">登录</button>
+										<div class="or">
+											<dd>——————————</dd>
+											<dd>OR</dd>
+											<dd>——————————</dd>
+											<br>
+											<a href="https://api.weibo.com/oauth2/authorize?state=qwPVVKPWLV5pt8C9lqSf7teYTm9YC9pL&redirect_uri=https%3A%2F%2Fwww.shanbay.com%2Fsocial%2Fcomplete%2Fweibo%2F&response_type=code&client_id=1909081927"><i class="icon iconfont" id="tubiao">&#xe61a;</i></a>
+											<a href="https://open.weixin.qq.com/connect/qrconnect?scope=snsapi_login&state=EUueCw9gFqHgmcVQegl0YuLXkdXR4AmH&redirect_uri=https%3A%2F%2Fwww.shanbay.com%2Fsocial%2Fcomplete%2Fwechat%2F&response_type=code&appid=wxe92337fbb21dfc9e"><i class="icon iconfont" id="tubiao">&#xe627;</i></a>
+											<a href="https://web.shanbay.com/web/account/register-login?next="><i class="icon iconfont" id="tubiao">&#xe600;</i></a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal fade" role="dialog" id="register">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header text-center">
+									<button type="button" class="close" data-dismiss="modal">&times;</button>
+									<h4>欢迎来到扇贝</h4>
+								</div>
+								<div class="modal-body text-center">
+									<div class="daka" style="float: left;">
+										<img src="images/shequ.png" alt="" style="width: 400px;height: 400px;">
+									</div>
+									<form action="" class="zhuce">
+										<input type="password" placeholder="密码">
+										<input type="text" placeholder="手机号">
+										<br>
+										<input type="text" placeholder="短信验证码" style="width: 110px;">
+										<input type="button" class="btn btn-sm btn-primary" value="获取验证码" style="width: 90px;margin-bottom: 10px;">
+										<p style="padding: 0;"><input type="checkbox" style="margin-top: 0;">我已阅读并同意扇贝网的<a href="https://www.shanbay.com/help/about/agreement/">使用协议</a></p>
+										<button type="button" class="btn btn-sm btn-success">注册/登录</button>
+										<div class="or">
+											<dd>——————————</dd>
+											<dd>OR</dd>
+											<dd>——————————</dd>
+											<br>
+											<a href="https://api.weibo.com/oauth2/authorize?state=qwPVVKPWLV5pt8C9lqSf7teYTm9YC9pL&redirect_uri=https%3A%2F%2Fwww.shanbay.com%2Fsocial%2Fcomplete%2Fweibo%2F&response_type=code&client_id=1909081927"><i class="icon iconfont" id="tubiao">&#xe61a;</i></a>
+											<a href="https://open.weixin.qq.com/connect/qrconnect?scope=snsapi_login&state=EUueCw9gFqHgmcVQegl0YuLXkdXR4AmH&redirect_uri=https%3A%2F%2Fwww.shanbay.com%2Fsocial%2Fcomplete%2Fwechat%2F&response_type=code&appid=wxe92337fbb21dfc9e"><i class="icon iconfont" id="tubiao">&#xe627;</i></a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="main-menu">
+						<a href="#">阅读</a>
+						<a href="root.html">词根</a>
+						<a href="#">词汇派生</a>
+						<a href="news.html">周刊</a>
+						<a href="team.html">小组</a>
+						<a href="daka.html">打卡日记</a>
+						<a href="#">手机客户端</a>
+						<a href="#">关注我们</a>
+					</div>
+				</div>
+			</div>
+			<div id="carousel_box" class="carousel slide">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel_box" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel_box" data-slide-to="1"></li>
+					<li data-target="#carousel_box" data-slide-to="2"></li>
+					<li data-target="#carousel_box" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<a href="#"><img src="images/reader.jpg" alt=""></a>
+						<div class="carousel-caption">
+							<div class="slide-col2">
+								<h2>扇贝阅读</h2>
+								<div class="row">
+									<div class="span5">
+										<p>阅读，是比背诵更好的记忆；</p>
+										<p>阅读，是检验词汇掌握程度的试金石；</p>
+										<p>阅读，帮助你停止“学英语”，而开始“用英语学”。</p>
+										<a href="#" class="more" target="_blank">了解扇贝阅读</a>
+									</div>
+									<div class="span4">
+										<a href="" class="btn btn-large btn-success">开始学习</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<a href="#"><img src="images/apps.jpg" alt=""></a>
+						<div class="carousel-caption">
+							<div class="slide-col2">
+								<h2>随时随地可以学习</h2>
+								<div class="row">
+									<div class="span5">
+										<h4>我们提供优化的访问界面，并且完全同步你的学习记录</h4>
+										<p>笔记本，台式机</p>
+										<p>iPhone，Android</p>
+										<p>传统手机</p>
+										<a href="#" class="more" target="_blank">了解不同平台和设备上的使用</a>
+									</div>
+									<div class="span4">
+										<a href="" class="btn btn-large btn-success">开始学习</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<a href="#"><img src="images/market.jpg" alt=""></a>
+						<div class="carousel-caption">
+							<div class="slide-col2">
+								<h2>丰富的学习资料</h2>
+								<div class="row">
+									<div class="span5">
+										<h4>根据你的程度和目标，定制学习内容</h4>
+										<p>真人发音和中英文释义</p>
+										<p>单词配图</p>
+										<p>例句和笔记</p>
+										<p>智慧词根</p>
+									</div>
+									<div class="span4">
+										<a href="" class="btn btn-large btn-success">了解学习资料</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<a href="#"><img src="images/progress.jpg" alt=""></a>
+						<div class="carousel-caption">
+							<div class="slide-col2">
+								<h2>进步看得见</h2>
+								<div class="row">
+									<div class="span5">
+										<p>我们会及时提醒你在什么时间，用什么方式复习</p>
+										<p>借助独特的打卡日记机制，督促你每天完成任务</p>
+										<p>和其他50万用户一起，彼此鼓励，共同奋斗</p>
+										<a href="#" class="more" target="_blank">了解为什么我们能够坚持</a>
+									</div>
+									<div class="span4">
+										<a href="" class="btn btn-large btn-success">开始学习</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#carousel_box" class="left carousel-control" data-slide="prev">&lsaquo;</a>
+				<a href="#carousel_box" class="right carousel-control" data-slide="next">&rsaquo;</a>
+			</div>
+			<hr class="slide_pic">
+			<hr class="slide_h2">
+			<hr>
+			<div class="row">
+				<div class="span6">
+					<div class="page-header" id="more-story">
+						<h3 class="title">
+							<span>用户的话</span>
+							<a href="#" target="_blank"><small>更多&gt&gt</small></a>
+						</h3>
+					</div>
+					<div class="row">
+						<div class="span potrait"><img src="images/mumuxi.jpg" alt=""></div>
+						<div class="span4">
+							<div class="quote">
+								“你有试过背单词上瘾的吗？话说本人上瘾一年多了，从词汇量很少到能看懂Times，我满心欢喜啊！真的很喜欢扇贝网！”
+							</div>
+							<div class="quote-author">
+								——<a href="#">沐沐西</a>，使用超过600 天
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+					    <div class="span potrait"><img src="images/aceli.jpg" alt="Story1"></div>
+					    <div class="span4">
+					        <div class="quote"> “在扇贝背单词，我每天都有目标，每天都有一点点的成就感，在这里最大的收获就是让我明白了持之以恒的含义” </div>
+					        <div class="quote-author">—— <a href="#">ACEli</a>，使用超过360 天</div>
+					    </div>
+					</div>
+					<hr>
+					<div class="row">
+					    <div class="span potrait"><img src="images/olala0320.jpg" alt="Story3"></div>
+					    <div class="span4">
+					        <div class="quote">“我是英语专业大四学生，明年3月考专八，单词量一直都是一个问题。好朋友夜猫同学开学的时候给我推荐扇贝网，背了很有效果，做阅读题、看华盛顿邮报都不那么费劲儿了，嘿嘿·····强烈推荐”</div>
+					        <div class="quote-author">—— <a href="#">olala0320</a>, 使用超过260 天</div>
+					    </div>
+					</div>
+				</div>
+				<div class="span6">
+					<div class="page-header">
+						<h3 class="title">
+							<span>老师的话</span>
+						</h3>
+					</div>
+					<div class="row" id="teacher-testmonials">
+						<div class="span potrait">
+							<img src="images/xiaolai.jpeg" alt="">
+						</div>
+						<div id="teacher-testmonial-area" class="span4">
+							<div class="quote">
+								<p>“这周，抽空去南京，见到一个很令人喜欢的小团队——扇贝网。</p>
+								<p>......</p>
+								<p>我就喜欢这种人，遇到需要解决的问题，不会就学，边学边做，做到好为止。这种人没什么事情是做不好的。”</p>
+							</div>
+							<div id="teacher">
+								- <span id="xiaolai-href"><a href="#" target="_blank">李笑来</a></span>
+								<span id="xiaolai-intro">原新东方托福名师，现艾德教育合伙人。著有《TOEFL核心词汇21天突破》、《把时间当做朋友》等畅销书籍。</span>
+							</div>
+						</div>
+					</div>
+					<div class="page-header">
+						<h3 class="title">
+							<span>媒体报道</span>
+						</h3>
+					</div>
+					<div class="row" id="shanbei-in-press">
+						<div class="span4" id="press-area">
+							<p>2012/01/05 <a href="#" target="_blank">扇贝网：温故就是知新</a></p>
+							<p> 2011/09/06 <a href="#" target="_blank">扇贝网：一个社会化的英语词汇学习平台</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="row">
+					<div class="span3">
+						<h4>如何使用</h4>
+						<ul>
+							<li><a href="#">帮助</a></li>
+							<li><a href="#">登录</a></li>
+							<li><a href="#">博客</a></li>
+							<li><a href="#">论坛</a></li>
+						</ul>
+					</div>
+					<div class="span3">
+					    <h4>关注扇贝</h4>
+					    <ul>
+					        <li><a target="_blank" href="#">人人网公共主页</a></li>
+					        <li><a target="_blank" href="#">QQ认证空间</a></li>
+					        <li><a target="_blank" href="#">新浪微博</a></li>
+					        <li><a target="_blank" href="#">豆瓣小七</a></li>
+					    </ul>
+					</div>
+					<div class="span3">
+						<h4>关于我们</h4>
+						<ul>
+							<li><a href="#">关于扇贝</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">友情链接</a></li>
+						</ul>
+					</div>
+					<div class="span3">
+					    <h4>面向开发者</h4>
+					    <ul>
+					        <li><a href="#">API</a></li>
+					    </ul>
+					</div>
+				</div>
+				<div class="copyright"> 
+					李笑来老师的头像由李笑来老师授权扇贝网使用 
+					<br />
+				    其他用户头像均由扇贝网真实用户提供，授权扇贝网使用 
+					<br />
+				    Copyright &copy; 2009-2013 shanbay.com, all rights reserved. 苏ICP备11041388 
+				</div>
+			</footer>
+		</div>
+		<script>
+			$(function(){
+				$('#carousel_box').carousel('cycle');
+			});
+		</script>
+	</body>
+</html>
